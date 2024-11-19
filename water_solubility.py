@@ -1,6 +1,4 @@
 # import the necessary libraries
-
-from distutils.command.upload import upload
 import numpy as np
 import pandas as pd
 from matplotlib import image, pyplot as plt
