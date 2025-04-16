@@ -1,5 +1,5 @@
 # import the necessary libraries
-
+st.set_page_config(page_title='Aqueous Solubility Prediction App', layout='wide')
 import numpy as np
 import pandas as pd
 from matplotlib import image, pyplot as plt
@@ -17,7 +17,7 @@ from rdkit.ML.Descriptors import MoleculeDescriptors
 # streamlit ---------------------------------------------------------
 import streamlit as st
 # MUST be the first Streamlit command
-st.set_page_config(page_title='Aqueous Solubility Prediction App', layout='wide')
+
 from PIL import Image
 import base64
 import io
