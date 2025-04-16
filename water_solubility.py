@@ -23,16 +23,11 @@ import io
 #=======================================================================================================
 #  Use trained lgbm regressor and standard scaler for predicting aqueous solubility of organic compounds
 #=======================================================================================================
-@st.cache_resource
-model = pickle.load(open("model.pkl", "rb"))
+with open('model.pkl','rb') as f:
+         model = pickle.load(f)
 
-@st.cache_resource
-def load_scaler():
-    with open('scaler.pkl', 'rb') as f:
-        return pickle.load(f)
-
-scaler = load_scaler()
-
+with open('scaler.pkl','rb') as f:
+          scaler = pickle.load(f)
 #--------------------------------------------------------------------------------------------------------------
 # List of molecular discriptors used in the training set. These descriptors should also be used for the test set
 #---------------------------------------------------------------------------------------------------------------
