@@ -24,8 +24,7 @@ import io
 #  Use trained lgbm regressor and standard scaler for predicting aqueous solubility of organic compounds
 #=======================================================================================================
 @st.cache_resource
-def load_model():
-    model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
     return model
 
 @st.cache_resource
@@ -33,7 +32,6 @@ def load_scaler():
     with open('scaler.pkl', 'rb') as f:
         return pickle.load(f)
 
-model = model
 scaler = load_scaler()
 
 #--------------------------------------------------------------------------------------------------------------
