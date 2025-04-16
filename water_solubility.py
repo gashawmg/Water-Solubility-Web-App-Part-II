@@ -89,7 +89,7 @@ descriptor_columns =  ['MaxEStateIndex', 'MinEStateIndex', 'MaxAbsEStateIndex',
        'fr_sulfone', 'fr_term_acetylene', 'fr_tetrazole', 'fr_thiazole',
        'fr_thiocyan', 'fr_thiophene', 'fr_unbrch_alkane', 'fr_urea']
 
-st.set_page_config(page_title='Aqueous Solubility Prediction App',layout='wide')
+#st.set_page_config(page_title='Aqueous Solubility Prediction App',layout='wide')
 
 st.sidebar.markdown('<h2 style="color:#5a03fc;background-color:powderblue;border-radius:10px;text-align:center"> Use this Sidebar for Solubility Prediction </h2>',unsafe_allow_html=True)
 
