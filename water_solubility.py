@@ -25,7 +25,6 @@ import io
 #=======================================================================================================
 @st.cache_resource
 model = pickle.load(open("model.pkl", "rb"))
-    return model
 
 @st.cache_resource
 def load_scaler():
