@@ -1,4 +1,3 @@
-# import the necessary libraries
 st.set_page_config(page_title='Aqueous Solubility Prediction App', layout='wide')
 import numpy as np
 import pandas as pd
