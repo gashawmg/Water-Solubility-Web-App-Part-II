@@ -3,6 +3,7 @@ import streamlit as st
 st.set_page_config(page_title='Aqueous Solubility Prediction App', layout='wide')
 import numpy as np
 import pandas as pd
+from lightgbm import LGBMRegressor
 from matplotlib import image, pyplot as plt
 import matplotlib.patches as mpatches
 import seaborn as sn
